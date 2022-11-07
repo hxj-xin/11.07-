@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>安邦应用中心</title>
+    <link rel="stylesheet" href="./css/01.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <p>APP应用</p>
+    </header>
+    <main>
+        <div class="top">
+            <img src="./img/image01/logo01.png" alt="">
+            <p class="top_p1">云办公<br>
+                <span>v.2.1.1.64MB</span>
+            </p>
+            <P class="top_p2"><span>安装</span></P>
+        </div>
+        <div class="bottom">
+            <p>内容介绍</p>
+            <span>【i邦理财】平台依托安邦集团优势资源，整合集团产品为移动互联网用户
+                构建集理财、投资、保障一体化的"个人资产管理生态圈
+                为您提供丰富的金融产品，建立良好的金融生态体系，让您在社交娱乐的同时收获财富，
+                让投资理财变得更加轻松、快乐、简单!现诚邀各位安邦IT人参与体验，
+                首次注册登陆还有好礼送哦。
+            </span>
+        </div>
+    </main>
+    <footer>
+        <div class="box1">
+            <span>APP应用</span>
+        </div>
+        <div class="box2">
+            <span>APP应用</span>
+        </div>
+        <div class="box3">
+            <span>APP应用</span>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    function setRem(){
+        var ui_w = 375;
+        var client_w =
+        document.documentElement.clientWidth||document.body.clientWidth;
+
+        var html_=document.getElementsByTagName('html')[0];
+        html_.style.fontSize=(client_w/ui_w)*10+'px';
+    }
+    var timer;
+    window.onresize=function(){
+        clearTimeout(timer);
+        timer=setTimeout(function(){
+            setRem();
+        },50)
+    }
+
+</script>

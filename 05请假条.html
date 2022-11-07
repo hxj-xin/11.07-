@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>请假条</title>
+    <link rel="stylesheet" href="./css/05.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <p>
+            <span class="p-sp"></span>
+            假单查询
+            <span class="p-sp1"></span>
+        </p>
+    </header>
+    <main>
+        <div class="box">
+            07-06提交
+        </div>
+        <dl>
+            <dd>员工</dd>
+            <dt>张公子-AB047239</dt>
+        </dl>
+        <dl>
+            <dd>类型</dd>
+            <dt>病假</dt>
+        </dl>
+        <dl>
+            <dd>开始时间</dd>
+            <dt>2020-04-04  上午08:30</dt>
+        </dl>
+        <dl>
+            <dd>结束时间</dd>
+            <dt>2020-04-04  下午18:30</dt>
+        </dl>
+        <dl>
+            <dd>时长</dd>
+            <dt>2天</dt>
+        </dl>
+        <dl class="work">
+            <dd>事由及安排</dd>
+            <dt>工作太累了，去非洲度假，事情交给铁锤处理</dt>
+        </dl>
+        <dl>
+            <dd>外出地点</dd>
+            <dt>北京</dt>
+        </dl>
+        <dl>
+            <dd>手机</dd>
+            <dt>13111111111</dt>
+        </dl>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+<script>
+    function setRem(){
+        var ui_w = 375;
+        var client_w =
+        document.documentElement.clientWidth||document.body.clientWidth;
+
+        var html_=document.getElementsByTagName('html')[0];
+        html_.style.fontSize=(client_w/ui_w)*10+'px';
+    }
+    var timer;
+    window.onresize=function(){
+        clearTimeout(timer);
+        timer=setTimeout(function(){
+            setRem();
+        },50)
+    }
+    
+
+
+</script>
+
+</script>

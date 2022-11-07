@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的-设置</title>
+    <link rel="stylesheet" href="./css/02.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <span class="hd_l"></span>
+        <p>设置</p>
+    </header>
+    <main>
+        <ul>
+            <li>个人信息</li>
+            <li>清空缓存</li>
+            <li>关于我们</li>
+            <li>意见反馈</li>
+            <li>检查更新</li>
+            <li class="log">退出当前账号</li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
+<script>
+    function setRem(){
+        var ui_w = 375;
+        var client_w =
+        document.documentElement.clientWidth||document.body.clientWidth;
+
+        var html_=document.getElementsByTagName('html')[0];
+        html_.style.fontSize=(client_w/ui_w)*10+'px';
+    }
+    var timer;
+    window.onresize=function(){
+        clearTimeout(timer);
+        timer=setTimeout(function(){
+            setRem();
+        },50)
+    }
+
+</script>

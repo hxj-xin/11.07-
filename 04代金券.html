@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>代金券</title>
+    <link rel="stylesheet" href="./css/04.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <p class="p1"></p>
+        <span class="sp1">店铺</span>
+        <span class="sp2">商品</span>
+        <p class="p2">清空收藏夹</p>
+    </header>
+    <main>
+        <div class="box">
+            <img src="./img/images03/1.png" alt="" class="img1" width="65px" height="65px">
+            <img src="./img/images03/sheLves.png" alt="" class="img2">
+            <div class="item">
+                <p class="item_p1">2016薄春夏季女士睡衣带胸垫性感两件套蕾丝吊带睡裙家居服</p>
+                <p class="item_p2">￥60.00<span class="item_sp1">￥160.00</span> <span  class="item_sp">查看相似</span></p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/images03/2.png" alt=""  class="img1" width="65px" height="65px">
+            <img src="./img/images03/soldOut.png" alt="" class="img2">
+            <div class="item">
+                <p class="item_p1">2016薄春夏季女士睡衣带胸垫性感两件套蕾丝吊带睡裙家居服</p>
+                <p class="item_p2">￥60.00<span class="item_sp1">￥160.00</span> <span  class="item_sp">查看相似</span></p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./img/images03/3.png" alt=""  class="img1" width="65px" height="65px">
+            <div class="item">
+                <p class="item_p1">2016薄春夏季女士睡衣带胸垫性感两件套蕾丝吊带睡裙家居服</p>
+                <p class="item_p2">￥60.00<span class="item_sp1">￥160.00</span></p>
+                
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
+<script>
+    function setRem(){
+        var ui_w = 375;
+        var client_w =
+        document.documentElement.clientWidth||document.body.clientWidth;
+
+        var html_=document.getElementsByTagName('html')[0];
+        html_.style.fontSize=(client_w/ui_w)*10+'px';
+    }
+    var timer;
+    window.onresize=function(){
+        clearTimeout(timer);
+        timer=setTimeout(function(){
+            setRem();
+        },50)
+    }
+
+</script>

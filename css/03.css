@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #EEEEEE;
+}
+header {
+  width: 100%;
+  height: 4rem;
+}
+header p {
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  background: url(../img/images04/back.png) no-repeat 0 0;
+  background-size: 4rem;
+  background-color: #FF0000;
+  font-size: 1.8rem;
+  color: white;
+  line-height: 4rem;
+}
+main {
+  width: 100%;
+}
+main .box {
+  width: 100%;
+  margin: 1rem;
+  background-color: white;
+  position: relative;
+}
+main .box .border_t {
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  background: url(../img/images04/border.png) repeat 0 4px;
+}
+main .box .top {
+  width: 100%;
+  height: 4rem;
+}
+main .box .top .img {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: url(../img/images04/baisei.png) no-repeat 0 0;
+  background-size: 100%;
+  border-radius: 50%;
+  margin: 1rem;
+}
+main .box .top .img1 {
+  background: url(../img/images04/baisei2.png) no-repeat 0 0;
+  background-size: 100%;
+}
+main .box .top p {
+  display: inline-block;
+  font-size: 1.6rem;
+  vertical-align: top;
+  margin-top: 1rem;
+  color: #333333;
+}
+main .box .top p span {
+  font-size: 1.5rem;
+  color: #66667F;
+}
+main .box .top .ftred {
+  width: 5.6rem;
+  height: 2rem;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  background-color: #FF0000;
+  float: right;
+  margin: 1rem 2rem 0 0;
+}
+main .box .circle1 {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #EEEEEE;
+  border-radius: 50%;
+  position: absolute;
+  top: 6rem;
+  left: -1rem;
+}
+main .box .circle2 {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #EEEEEE;
+  border-radius: 50%;
+  position: absolute;
+  top: 6rem;
+  right: 0;
+}
+main .box .bottom {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+main .box .bottom p {
+  border-top: 0.1rem solid #EEEEEE;
+  font-size: 1.6rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: #66667F;
+}
+main .box .bottom p span {
+  color: #FF0000;
+}
+main .box .border_b {
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  background: url(../img/images04/border.png) repeat 0 0;
+}
